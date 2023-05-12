@@ -6,9 +6,36 @@
     xmlns:local="clr-namespace:AppleMusic"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+                Icon="listen"
+                Title="Ecouter"
+                ContentTemplate="{DataTemplate local:Bibliotheque}"
+                Route="UnknowPage" />
 
+        <ShellContent
+                Icon="explore"
+                Title="Explorer"
+                ContentTemplate="{DataTemplate local:Bibliotheque}"
+                Route="UnknowPage" />
+
+        <ShellContent
+                Icon="radio"
+                Title="Radio"
+                ContentTemplate="{DataTemplate local:Bibliotheque}"
+                Route="UnknowPage"/>
+
+        <ShellContent
+                Icon="library"
+                Title="Librairie"
+                ContentTemplate="{DataTemplate local:Bibliotheque}"
+                Route="LibraryPage" 
+                FlyoutItemIsVisible="True"/>
+
+        <ShellContent
+                Icon="search"
+                Title="Recherche"
+                ContentTemplate="{DataTemplate local:Bibliotheque}"
+                Route="UnknowPage" />
+    </TabBar>
 </Shell>

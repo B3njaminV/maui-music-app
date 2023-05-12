@@ -1,10 +1,10 @@
 ﻿namespace AppleMusic;
 
-public partial class MainPage : ContentPage
+public partial class Bibliotheque : ContentPage
 {
 	int count = 0;
 
-	public MainPage()
+	public Bibliotheque()
 	{
 		InitializeComponent();
 	}
