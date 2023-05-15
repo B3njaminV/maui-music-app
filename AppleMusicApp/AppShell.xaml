@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppleMusicApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:AppleMusicApp.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+            Icon="icon_listen"
+            Title="Listen"
+            ContentTemplate="{DataTemplate pages:UnknowPage}"
+            Route="UnknowPage" />
+
+        <ShellContent
+            Icon="icon_explore"
+            Title="Explore"
+            ContentTemplate="{DataTemplate pages:UnknowPage}"
+            Route="UnknowPage" />
+
+        <ShellContent
+            Icon="icon_radio"
+            Title="Radio"
+            ContentTemplate="{DataTemplate pages:UnknowPage}"
+            Route="UnknowPage"/>
+
+        <ShellContent
+            x:Name="LibraryPanel"
+            Icon="icon_library"
+            Title="Library"
+            ContentTemplate="{DataTemplate pages:LibraryPage}"
+            Route="LibraryPage" />
+
+        <ShellContent
+            Icon="icon_search"
+            Title="Listen"
+            ContentTemplate="{DataTemplate pages:UnknowPage}"
+            Route="UnknowPage" />
+    </TabBar>
+</Shell>
