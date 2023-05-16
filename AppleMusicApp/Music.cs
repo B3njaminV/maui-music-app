@@ -12,5 +12,6 @@ namespace AppleMusicApp
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public string Artist { get; set; }
+        public List<string> Tracks { get; set; }
     }
 }

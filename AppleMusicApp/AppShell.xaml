@@ -8,18 +8,21 @@
 
     <TabBar>
         <ShellContent
+            x:Name="ListenPanel"
             Icon="icon_listen"
             Title="Ecouter"
             ContentTemplate="{DataTemplate pages:UnknowPage}"
             Route="UnknowPage" />
 
         <ShellContent
+            x:Name="ExplorerPanel"
             Icon="icon_explore"
             Title="Explorer"
             ContentTemplate="{DataTemplate pages:UnknowPage}"
             Route="UnknowPage" />
 
         <ShellContent
+            x:Name="RadioPanel"
             Icon="icon_radio"
             Title="Radio"
             ContentTemplate="{DataTemplate pages:UnknowPage}"
@@ -33,6 +36,7 @@
             Route="LibraryPage" />
 
         <ShellContent
+            x:Name="RechercherPanel"
             Icon="icon_search"
             Title="Rechercher"
             ContentTemplate="{DataTemplate pages:UnknowPage}"

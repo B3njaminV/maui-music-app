@@ -68,9 +68,11 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
-	  <Folder Include="Pages\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="Pages\DetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LibraryPageContent.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppleMusicApp.Pages.DetailPage"
+             Title="DetailPage">
+    <StackLayout Margin="10">
+
+        <Frame HeightRequest="250" WidthRequest="250" Padding="0" HasShadow="False">
+            <Image Source="{Binding ImageUrl}"
+                   Aspect="AspectFill"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   />
+        </Frame>
+
+        <Label Text="{Binding Title}"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+        <Label Text="{Binding Artist}"
+                   FontSize="18"
+                   TextColor="DarkRed"
+                   HorizontalOptions="Center"
+                  />
+
+        <Label Text="{Binding Description}"
+                   FontSize="10"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Lecture"
+                        Clicked="OnPlayClicked"
+                        Margin="0,0,10,0" />
+
+            <Button Text="Aléatoire"
+                        Clicked="OnShuffleClicked" />
+        </StackLayout>
+
+        <ListView ItemsSource="{Binding Tracks}"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" VerticalOptions="Center">
+                            <Label Text="{Binding}"
+                                       FontSize="16"
+                                       FontAttributes="Bold" />
+                            <BoxView BackgroundColor="Gray"
+                             HeightRequest="1"
+                             HorizontalOptions="FillAndExpand"
+                             Margin="0,5,0,0" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

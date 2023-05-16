@@ -57,7 +57,7 @@
 
             <StackLayout Grid.Row="3">
                 <CollectionView x:Name="musicsCollection"
-                                SelectionMode="None"
+                                SelectionMode="Single"
                                 SelectedItem="{Binding SelectedMusic}"
                                 SelectionChanged="OnMusicSelected">
                     <CollectionView.ItemsLayout>

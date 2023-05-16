@@ -19,7 +19,18 @@ public partial class LibraryPage : ContentPage
             string imageUrl = $"podcast.jpg";
             string artist = $"Personne";
 
-            podcasts.Add(new Music { Title = title, Description = description, ImageUrl = imageUrl, Artist = artist});
+            podcasts.Add(new Music { 
+                Title = title, 
+                Description = description, 
+                ImageUrl = imageUrl, 
+                Artist = artist, 
+                Tracks = new List<string>
+                {
+                    "Titre du morceau 1 - Artiste 1",
+                    "Titre du morceau 2 - Artiste 2",
+                    "Titre du morceau 3 - Artiste 3"
+                }
+            });
         }
 
         musicsCollection.ItemsSource = podcasts;
@@ -29,7 +40,7 @@ public partial class LibraryPage : ContentPage
     {
         if (e.CurrentSelection.FirstOrDefault() is Music selectedMusic)
         {
-            //await Navigation.PushAsync(new DetailPodcastPage(selectedPodcast));
+            await Navigation.PushAsync(new DetailPage(selectedMusic));
         }
     }
 
