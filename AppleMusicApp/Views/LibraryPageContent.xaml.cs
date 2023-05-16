@@ -1,9 +1,9 @@
 ﻿namespace AppleMusicApp.Views;
 
-public partial class LibraryPageContent : ViewCell
+public partial class LibraryPageContent : ContentView
 {
-	public LibraryPageContent()
-	{
-		InitializeComponent();
-	}
+    public LibraryPageContent()
+    {
+        //InitializeComponent();
+    }
 }

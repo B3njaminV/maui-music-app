@@ -9,13 +9,13 @@
     <TabBar>
         <ShellContent
             Icon="icon_listen"
-            Title="Listen"
+            Title="Ecouter"
             ContentTemplate="{DataTemplate pages:UnknowPage}"
             Route="UnknowPage" />
 
         <ShellContent
             Icon="icon_explore"
-            Title="Explore"
+            Title="Explorer"
             ContentTemplate="{DataTemplate pages:UnknowPage}"
             Route="UnknowPage" />
 
@@ -28,13 +28,13 @@
         <ShellContent
             x:Name="LibraryPanel"
             Icon="icon_library"
-            Title="Library"
+            Title="Bibliotheque"
             ContentTemplate="{DataTemplate pages:LibraryPage}"
             Route="LibraryPage" />
 
         <ShellContent
             Icon="icon_search"
-            Title="Listen"
+            Title="Rechercher"
             ContentTemplate="{DataTemplate pages:UnknowPage}"
             Route="UnknowPage" />
     </TabBar>
