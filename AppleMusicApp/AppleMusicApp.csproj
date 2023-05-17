@@ -37,6 +37,9 @@
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\podcast.png" />
+	</ItemGroup>
+	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.png" Color="#000" />
 		
@@ -76,5 +79,8 @@
 	  <MauiXaml Update="Views\LibraryPageContent.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\podcast.png" />
 	</ItemGroup>
 </Project>

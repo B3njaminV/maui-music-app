@@ -4,6 +4,25 @@ public partial class LibraryPageContent : ContentView
 {
     public LibraryPageContent()
     {
-        //InitializeComponent();
+        InitializeComponent();
+
     }
+
+    public string ImageLPC {
+        get => "";
+        set
+        {
+           image.Source = value;
+        }
+    }
+
+    public string LabelLPC
+    {
+        get => "";
+        set
+        {
+            label.Text = value;
+        }
+    }
+    
 }

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:AppleMusicApp.Views"
              x:Class="AppleMusicApp.Pages.LibraryPage">
     
     <ScrollView>
@@ -10,42 +11,26 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <StackLayout Orientation="Horizontal" Margin="10,10,0,10" Grid.Row="0">
+            <VerticalStackLayout  Margin="10,10,0,10" Grid.Row="0">
                 <Label x:Name="titleLabel"
                            Text="Bibliothèque"
                            FontSize="Large"
                            VerticalOptions="Center" />
-            </StackLayout>
+            </VerticalStackLayout>
 
             <StackLayout x:Name="menuStackLayout"
                              Orientation="Vertical"
                              Margin="10"
                              Grid.Row="1">
-                <StackLayout Orientation="Horizontal" Margin="0,5" Padding="10" BackgroundColor="LightGray" >
-                    <Image Source="note.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" />
-                    <Label Text="Menu 1" VerticalOptions="Center" Margin="10,0" />
-                    <Image Source="arrow_right.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
-                </StackLayout>
 
-                <StackLayout Orientation="Horizontal" Margin="0,5" Padding="10" BackgroundColor="LightGray">
-                    <Image Source="note.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" />
-                    <Label Text="Menu 1" VerticalOptions="Center" Margin="10,0" />
-                    <Image Source="arrow_right.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
-                </StackLayout>
+                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Playlists"/>
+                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Artistes"/>
+                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Albums"/>
+                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Compilation"/>
 
-                <StackLayout Orientation="Horizontal" Margin="0,5" Padding="10" BackgroundColor="LightGray">
-                    <Image Source="note.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" />
-                    <Label Text="Menu 1" VerticalOptions="Center" Margin="10,0" />
-                    <Image Source="arrow_right.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal" Margin="0,5" Padding="10" BackgroundColor="LightGray">
-                    <Image Source="note.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" />
-                    <Label Text="Menu 1" VerticalOptions="Center" Margin="10,0" />
-                    <Image Source="arrow_right.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
-                </StackLayout>
             </StackLayout>
 
             <StackLayout Grid.Row="2"
@@ -70,7 +55,7 @@
                                 <Frame HeightRequest="170" WidthRequest="170">
                                     <Image HeightRequest="170"
                                        WidthRequest="170"
-                                       Source="{Binding ImageUrl}"/>
+                                       Source="podcast.png"/>
                                 </Frame>
 
                                 <Label FontSize="Small"
@@ -85,6 +70,17 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </StackLayout>
+             <StackLayout Grid.Row="4" Orientation="Horizontal" Padding="10" BackgroundColor="LightGray" >
+                   <Frame HeightRequest="50" WidthRequest="50">
+                                    <Image HeightRequest="50"
+                                       WidthRequest="50"
+                                       Source="podcast.png"/>
+                    </Frame>
+                    <Label Text="Caméra terminus" VerticalOptions="Center" Margin="10,0" />
+                    <Image Source="play.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
+                    <Image Source="forward.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
+            </StackLayout>
         </Grid>
     </ScrollView>
+   
 </ContentPage>

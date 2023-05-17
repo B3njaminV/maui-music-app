@@ -6,6 +6,8 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
 		CurrentItem = LibraryPanel;
+		//OU
+		//Shell.Current.GoToAsync("//LibraryPage");
 	}
 }
 
