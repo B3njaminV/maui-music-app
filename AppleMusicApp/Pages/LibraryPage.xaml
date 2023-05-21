@@ -70,15 +70,15 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </StackLayout>
-             <StackLayout Grid.Row="4" Orientation="Horizontal" Padding="10" BackgroundColor="{StaticResource NavigationBarBackgroundColor} >
-                   <Frame HeightRequest="50" WidthRequest="50">
-                                    <Image HeightRequest="50"
+             <StackLayout Grid.Row="4" Orientation="Horizontal" Padding="10" BackgroundColor="{StaticResource NavigationBarBackgroundColor}" >
+                <Frame HeightRequest="50" WidthRequest="50">
+                    <Image HeightRequest="50"
                                        WidthRequest="50"
                                        Source="podcast.png"/>
-                    </Frame>
-                    <Label Text="Caméra terminus" VerticalOptions="Center" Margin="10,0" />
-                    <Image Source="play.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
-                    <Image Source="forward.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
+                </Frame>
+                <Label Text="Caméra terminus" VerticalOptions="Center" Margin="10,0" />
+                <Image Source="play.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
+                <Image Source="forward.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" HorizontalOptions="End" />
             </StackLayout>
         </Grid>
     </ScrollView>

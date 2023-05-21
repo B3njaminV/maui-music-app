@@ -14,10 +14,10 @@ public partial class LibraryPage : ContentPage
 
         for (int i = 1; i <= 10; i++)
         {
-            string title = $"Podcast {i}";
+            string title = $"Podcast propriété {i}";
             string description = $"Description du podcast {i}";
             string imageUrl = $"podcast.jpg";
-            string artist = $"Personne";
+            string artist = $"Wayne Shorter";
 
             podcasts.Add(new Music { 
                 Title = title, 
@@ -28,7 +28,12 @@ public partial class LibraryPage : ContentPage
                 {
                     "Titre du morceau 1 - Artiste 1",
                     "Titre du morceau 2 - Artiste 2",
-                    "Titre du morceau 3 - Artiste 3"
+                    "Titre du morceau 3 - Artiste 3",
+                    "Titre du morceau 4 - Artiste 4",
+                    "Titre du morceau 5 - Artiste 5",
+                    "Titre du morceau 6 - Artiste 6",
+                    "Titre du morceau 7 - Artiste 7",
+                    "Titre du morceau 8 - Artiste 8"
                 }
             });
         }

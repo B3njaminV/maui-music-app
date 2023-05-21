@@ -32,10 +32,13 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Button Text="Lecture"
                         Clicked="OnPlayClicked"
-                        Margin="0,0,10,0" />
+                        Margin="0,0,10,0" 
+                    BackgroundColor="{StaticResource NavigationBarBackgroundColor}">
+            </Button>
 
             <Button Text="Aléatoire"
-                        Clicked="OnShuffleClicked" />
+                        Clicked="OnShuffleClicked" 
+                    BackgroundColor="{StaticResource NavigationBarBackgroundColor}"/>
         </StackLayout>
 
         <ListView ItemsSource="{Binding Tracks}">
@@ -53,8 +56,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-
+        
         <StackLayout Orientation="Vertical" VerticalOptions="Center">
             <Label Text="31 décembres 1959" />
             <Label Text="8 morceaux, 40 minutes"/>
