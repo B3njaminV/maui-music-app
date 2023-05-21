@@ -8,7 +8,19 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                
             </ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <Style x:Key="LightTheme" TargetType="Application">
+                    <Setter Property="BackgroundColor" Value="White" />
+                    <!-- Autres styles pour le thème Light -->
+                </Style>
+
+                <Style x:Key="DarkTheme" TargetType="Application">
+                    <Setter Property="BackgroundColor" Value="Black" />
+                    <!-- Autres styles pour le thème Dark -->
+                </Style>
+            </ResourceDictionary>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

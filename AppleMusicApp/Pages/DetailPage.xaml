@@ -42,18 +42,24 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="10" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal" Padding="10" VerticalOptions="Center">
                             <Label Text="{Binding}"
                                        FontSize="16"
-                                       FontAttributes="Bold" />
-                            <BoxView BackgroundColor="Gray"
-                             HeightRequest="1"
-                             HorizontalOptions="FillAndExpand"
-                             Margin="0,5,0,0" />
+                                       FontAttributes="Bold"
+                                   HorizontalOptions="StartAndExpand"/>
+                            <Label Text="..." HorizontalOptions="End" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Label Text="31 décembres 1959" />
+            <Label Text="8 morceaux, 40 minutes"/>
+            <Label Text="@1999 Blue Note Records" />
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>

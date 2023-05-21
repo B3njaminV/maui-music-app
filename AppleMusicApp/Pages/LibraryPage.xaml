@@ -27,9 +27,9 @@
                              Grid.Row="1">
 
                 <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Playlists"/>
-                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Artistes"/>
-                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Albums"/>
-                <views:LibraryPageContent ImageLPC="note.png" LabelLPC="Compilation"/>
+                <views:LibraryPageContent ImageLPC="micro.png" LabelLPC="Artistes"/>
+                <views:LibraryPageContent ImageLPC="album.png" LabelLPC="Albums"/>
+                <views:LibraryPageContent ImageLPC="disc.png" LabelLPC="Compilation"/>
 
             </StackLayout>
 
@@ -70,7 +70,7 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </StackLayout>
-             <StackLayout Grid.Row="4" Orientation="Horizontal" Padding="10" BackgroundColor="LightGray" >
+             <StackLayout Grid.Row="4" Orientation="Horizontal" Padding="10" BackgroundColor="{StaticResource NavigationBarBackgroundColor} >
                    <Frame HeightRequest="50" WidthRequest="50">
                                     <Image HeightRequest="50"
                                        WidthRequest="50"

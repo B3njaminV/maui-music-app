@@ -70,9 +70,6 @@
 	  <None Remove="Pages\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Views\" />
-	</ItemGroup>
-	<ItemGroup>
 	  <MauiXaml Update="Pages\DetailPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
